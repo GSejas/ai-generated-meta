@@ -23,6 +23,17 @@
             ],
             "cwd": "${workspaceFolder}",
             "console": "integratedTerminal"
+        },
+        {
+            "name": "Generate Header and Readme",
+            "type": "python",
+            "request": "launch",
+            "module": "ai_header_generator.cli",
+            "args": [
+                "--config=config.ini",
+                "--template=\"${file}\""
+            ],
+            "console": "integratedTerminal"
         }
     ]
 }
