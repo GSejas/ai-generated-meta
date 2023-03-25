@@ -11,6 +11,18 @@
             "program": "${file}",
             "console": "integratedTerminal",
             "justMyCode": true
+        },
+        {
+            "name": "Debug ai-header-generator",
+            "type": "python",
+            "request": "launch",
+            "module": "cli",
+            "args": [
+                "--config",
+                "config.ini"
+            ],
+            "cwd": "${workspaceFolder}",
+            "console": "integratedTerminal"
         }
     ]
 }
