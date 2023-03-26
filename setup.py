@@ -1,5 +1,8 @@
 from setuptools import setup, find_packages
 
+with open("README.md", "r") as fh:
+    long_description = fh.read()
+
 setup(
     name="ai_header_generator",
     version="0.1",
@@ -15,5 +18,12 @@ setup(
     include_package_data=True,
     package_data={
         '': ['*.json'],
-    }
+    },
+    url="https://github.com/GSejas/ai-generated-meta",
+    author="Jorge Sequeira",
+    author_email="jsequeira03@gmail.com",
+    maintainer="Jorge Sequeira",
+    maintainer_email="jsequeira03@gmail.com",
+    long_description=long_description,
+    long_description_content_type="text/markdown"
 )

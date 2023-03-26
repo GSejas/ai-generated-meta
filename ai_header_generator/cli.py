@@ -3,7 +3,8 @@ from .header_generator import MetaGenerator
 
 
 def main():
-
+    """ [insert]
+    """    
     parser = argparse.ArgumentParser(description="AI-based header generator for code files.")
 
     parser.add_argument("--config", help="Path to the configuration file.", default="config.ini")
