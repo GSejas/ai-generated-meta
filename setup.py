@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setup(
     name="ai_header_generator",
-    version="0.1.0",
+    version="0.2.0",
     packages=find_packages(include=['ai_header_generator', 'ai_header_generator.*']),
     install_requires=[
         "openai",'argparse','configparser','jsonpickle'
