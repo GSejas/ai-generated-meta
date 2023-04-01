@@ -1,0 +1,115 @@
+{
+    "name": "Code Description",
+    "description": "Prompt generate sphinx docstring",
+    "analysis_file_extension": ".py",
+    "type": "source code"
+    "aiprovider": {
+        "openai":
+        {
+            "label":""
+            "model""",
+            "settings":{
+                "etc":"etc"
+            }
+        }
+    }
+    "prompt": 
+        "given code base for {filename} in project tree: 
+        
+        \n\n$project_tree: {code}
+        
+        \\nsuggest sphix documentation for each function in json: 
+        $json 
+        
+        the project structure:
+        {project_tree}
+        ",
+    "json_structure": [{
+        "name": "function",
+        "description": "sphinx docstring"
+    },
+    {
+        "name": "class",
+        "description": "sphinx docstring"
+    },
+    {
+        "name": "class.method",
+        "description": "sphinx docstring"
+    }],
+    "header_postfix": "_docstring.txt",
+    "folderrecusive": False, // meaning, it does or doesn't analyze source code filesizeformat
+    {
+        "parseresponse": True,
+        "followup":[
+            {
+                "name": "Code Description",
+                "description": "Prompt generate sphinx docstring",
+                "analysis_file_extension": ".py",
+                "prompt": 
+                    "given code base for {filename} in project tree: 
+                    
+                    \n\n$project_tree: {code}
+                    
+                    \\nsuggest sphix documentation for each function in json: 
+                    $json 
+                    
+                    the project structure:
+                    {project_tree}
+                    ",
+                "json_structure": [{
+                    "name": "function",
+                    "description": "sphinx docstring"
+                },
+                {
+                    "name": "class",
+                    "description": "sphinx docstring"
+                },
+                {
+                    "name": "class.method",
+                    "description": "sphinx docstring"
+                }],
+                "header_postfix": "_docstring.txt",
+                "folderrecusive": False, // meaning, it does or doesn't analyze source code filesizeformat
+                "": False, // meaning, it does or doesn't analyze source code filesizeformat
+                {
+                    "followup":
+                }
+            },
+            
+            {
+                "name": "Code Description",
+                "description": "Prompt generate sphinx docstring",
+                "analysis_file_extension": ".py",
+                "prompt": 
+                    "given code base for {filename} in project tree: 
+                    
+                    \n\n$project_tree: {code}
+                    
+                    \\nsuggest sphix documentation for each function in json: 
+                    $json 
+                    
+                    the project structure:
+                    {project_tree}
+                    ",
+                "json_structure": [{
+                    "name": "function",
+                    "description": "sphinx docstring"
+                },
+                {
+                    "name": "class",
+                    "description": "sphinx docstring"
+                },
+                {
+                    "name": "class.method",
+                    "description": "sphinx docstring"
+                }],
+                "header_postfix": "_docstring.txt",
+                "folderrecusive": False, // meaning, it does or doesn't analyze source code filesizeformat
+                "": False, // meaning, it does or doesn't analyze source code filesizeformat
+                {
+                    "followup":
+                }
+            }
+        ]
+    }
+}
