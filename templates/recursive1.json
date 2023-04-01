@@ -1,0 +1,15 @@
+{
+    "version"   : "0.1",
+    "name": "Code Description",
+    "description": "Prompt generate sphinx docstring",
+    "analysis_file_extension": ".meta",
+    "prompt": {
+        "context": "given {project_tree} \n\n with the following meta files:{meta_files} \n\n",
+        "request": "",
+        "outformat":"answer in json format"
+    },
+    "model": "gpt4",
+    "header_postfix": "_docstring.txt",
+    "TreeRecursive": false,
+    "Chain": "recursive1"
+}

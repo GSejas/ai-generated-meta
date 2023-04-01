@@ -1,5 +1,5 @@
 import pytest
-from ai_header_generator.header_generator import MetaGenerator
+from ai_meta_generator.header_generator import MetaGenerator
 
 def test_init():
     # test if a HeaderGenerator instance is created

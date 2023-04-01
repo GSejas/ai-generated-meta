@@ -16,11 +16,20 @@
             "name": "Debug ai-header-generator",
             "type": "python",
             "request": "launch",
-            "module": "cli",
+            "module": "/workspaces/ai-generated-meta/ai-header-generator/cli",
             "args": [
                 "--config",
                 "config.ini"
             ],
+            "cwd": "${workspaceFolder}",
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "init ai-header-generator",
+            "type": "python",
+            "request": "launch",
+            "module": "cmd",
+            
             "cwd": "${workspaceFolder}",
             "console": "integratedTerminal"
         },

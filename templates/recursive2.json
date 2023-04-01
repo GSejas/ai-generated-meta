@@ -1,0 +1,10 @@
+{
+    "version"   : "0.1",
+    "name": "Code Description",
+    "description": "Prompt generate sphinx docstring",
+    "analysis_file_extension": ".py",
+    "prompt": "given code base for {filename} in project tree: \n\n$project_tree: {code} suggest sphix documentation for each function in json: $json",
+    "header_postfix": "_docstring.txt",
+    "TreeRecursive": false,
+    "Chain": false
+}
