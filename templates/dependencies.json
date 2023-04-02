@@ -1,0 +1,7 @@
+{
+    "name": "Code Description",
+    "description": "Prompt generate sphinx docstring",
+    "analysis_file_extension": ["*.py"],
+    "prompt": "given  {filename}: \n```python {code}\n``` \n\na and given the following project structure {project_tree}",
+    "header_postfix": "_dependencies.md"
+}

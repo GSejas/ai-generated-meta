@@ -15,3 +15,4 @@ pypiUpload.bat
 config.ini
 project_tree.hex
 /**/new_venv
+**/__pycache__

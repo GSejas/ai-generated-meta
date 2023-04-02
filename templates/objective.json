@@ -1,0 +1,7 @@
+{
+    "name": "Code Description",
+    "description": "Prompt generate sphinx docstring",
+    "analysis_file_extension": ["workspace.py"],
+    "prompt": "given  {filename}: \n```python {code}\n``` \n\na and given the following project structure {project_tree} state the objective of the code. be concise and explain yourself.",
+    "header_postfix": "_objective.md"
+}
