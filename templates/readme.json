@@ -2,6 +2,6 @@
     "name": "Code Description",
     "description": "Promt generate unit tests using pytest",
     "analysis_file_extension": ".py",
-    "prompt": "suggest readme with usage, features, setup for this code: \n\n{code} \n\n given the following project structure {project_tree}",
+    "prompt": "given the following code \n {filename}: \n\n```python\n{code}\n```\n \n\n given the following project structure {project_tree}",
     "header_postfix": "_pytest.txt"
 }
