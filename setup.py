@@ -12,7 +12,7 @@ setup(
     ],
     entry_points={
         "console_scripts": [
-            "ai-header-generator=cli:main",
+            "ai-meta-generator=cmd:main",
         ],
     },
     include_package_data=True,
