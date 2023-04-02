@@ -102,7 +102,7 @@
             "request": "launch",
             "program": "${workspaceFolder}/ai-header-generator/cmd.py",
             "args": [
-                "--template=${file}"
+                "--meta=delete"
             ],
             "console": "integratedTerminal"
         },
