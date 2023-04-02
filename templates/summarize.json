@@ -2,6 +2,7 @@
     "name": "Code Description",
     "description": "Prompt generate sphinx docstring",
     "analysis_file_extension": [".py", ".cfg", ".json", ".ini", ".md"],
-    "prompt": "summarize the language, purpose, expected output, input data, libraries/frameworks of following code: {filename}: {code}. \n given the following project structure {project_tree}. respond in json format.",
-    "header_postfix": "_summary.markup"
+    "prompt": "# How to write great unit tests with pytest \n\n    In this advanced tutorial for experts, we'll use Python 3.9 and `pytest` to write a suite of unit tests to verify the behavior of the following function.\n    ```python\n    {filename}: {code}\n\n\nBefore writing any unit tests, let's review what each element of the function is doing exactly and what the author's intentions may have been. Given the following project structure ```bash \n{project_tree}\n. First, . \n ",
+    "header_postfix": "_summary.markup",
+    "model": "text-davinci-003"
 }

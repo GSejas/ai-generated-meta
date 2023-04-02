@@ -1,0 +1,7 @@
+{
+    "name": "Code Description",
+    "description": "Prompt generate sphinx docstring",
+    "analysis_file_extension": ".py",
+    "prompt": "# How {filename} works, inputs, outputs, dependencies and assumptions \n\n\nIf you hit the tree command, you should see the following ```bash \n{project_tree}\n````\n \nIn this advanced tutorial for experts, we're explaining how this module works, what are the inputs, what are the outputs, dependency libraries and files, and final assumptions.\n```python\n{filename}: {code}\n",
+    "header_postfix": "_docstring.txt"
+}

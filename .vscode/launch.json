@@ -25,12 +25,85 @@
             "console": "integratedTerminal"
         },
         {
+            "name": "init simple ai-header-generator",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/ai-header-generator/cmd.py",
+            "console": "integratedTerminal"
+        },
+        {
             "name": "init ai-header-generator",
             "type": "python",
             "request": "launch",
-            "module": "cmd",
-            
-            "cwd": "${workspaceFolder}",
+            "program": "${workspaceFolder}/ai-header-generator/cmd.py",
+            "args": [
+                "--config=config.ini",
+                "--template=${file}"
+            ],
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "surmmarize ai-header-generator",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/ai-header-generator/cmd.py",
+            "args": [
+                "--config=config.ini",
+                "--template=/workspaces/ai-generated-meta/templates/summarize.json"
+            ],
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "exec template readme on file",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/ai-header-generator/cmd.py",
+            "args": [
+                "--config=config.ini",
+                "--template=/workspaces/ai-generated-meta/templates/readme.json",
+                "--file=${file}"
+            ],
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "exec depend. on file",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/ai-header-generator/cmd.py",
+            "args": [
+                "--template=/workspaces/ai-generated-meta/templates/dependencies.json"
+            ],
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "exec objt on file",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/ai-header-generator/cmd.py",
+            "args": [
+                "--template=/workspaces/ai-generated-meta/templates/objective.json"
+            ],
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "exec template ai-header-generator",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/ai-header-generator/cmd.py",
+            "args": [
+                "--config=config.ini",
+                "--template=${file}"
+            ],
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "Delete All Result Files",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/ai-header-generator/cmd.py",
+            "args": [
+                "--meta=delete"
+            ],
             "console": "integratedTerminal"
         },
         {
