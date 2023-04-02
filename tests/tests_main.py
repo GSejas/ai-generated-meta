@@ -28,7 +28,7 @@ Fields:
 
 class TestExecuteClass:
 
-    // Tests that the process() method handles different command line arguments and executes the appropriate methods. tags: [happy path, edge case, general behavior]
+    # // Tests that the process() method handles different command line arguments and executes the appropriate methods. tags: [happy path, edge case, general behavior]
     def test_process(self, mocker):
         # Happy path: test that process() method executes the appropriate methods based on command line arguments
         args = mocker.Mock()
@@ -60,7 +60,7 @@ class TestExecuteClass:
         workspace.templates.assert_not_called()
         connector.Query.assert_called_with(prompt=mocker.ANY, model=mocker.ANY)
 
-    // Tests that the query() method of the template class handles excluded files and directories. tags: [happy path]
+    # // Tests that the query() method of the template class handles excluded files and directories. tags: [happy path]
     def test_query(self, mocker):
         # Happy path: test that query() method of Template class handles excluded files and directories
         config = mocker.Mock()
@@ -87,7 +87,7 @@ class TestExecuteClass:
         template.query(connector, file="test_file.py")
         connector.Query.assert_called_once()
 
-    // Tests that the init() method creates a workspace in the current directory. tags: [happy path]
+    # // Tests that the init() method creates a workspace in the current directory. tags: [happy path]
     def test_init(self, mocker):
         # Happy path: test that init() method creates a workspace in the current directory
         args = mocker.Mock()
@@ -102,7 +102,7 @@ class TestExecuteClass:
 
         workspace_creator.create.assert_called_once_with(os.getcwd())
 
-    // Tests that the _read_config() method reads the configuration file and sets the config field. tags: [happy path, edge case]
+    # // Tests that the _read_config() method reads the configuration file and sets the config field. tags: [happy path, edge case]
     def test_read_config(self, mocker):
         # Happy path test
         # Mock the Configuration class and its _read() method
@@ -118,7 +118,7 @@ class TestExecuteClass:
 
         assert execute.config == mock_config
 
-    // Tests that the delete() method deletes the results of the templates. tags: [happy path]
+    # // Tests that the delete() method deletes the results of the templates. tags: [happy path]
     def test_delete(self, mocker):
         # Happy path test
         # Mock the Template class and its delete_results() method
@@ -134,7 +134,7 @@ class TestExecuteClass:
 
         mock_template.delete_results.assert_called_once()
 
-    // Tests that the query() method of the template class handles errors when generating headers. tags: [edge case]
+    # // Tests that the query() method of the template class handles errors when generating headers. tags: [edge case]
     def test_template_query_error(self, mocker):
         # Edge case test
         # Mock the OpenAIConnector class and its Query() method to raise an exception
